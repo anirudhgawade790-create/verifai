@@ -5,14 +5,8 @@ import type { SessionUser } from "./types";
 export const SESSION_COOKIE = "verifai_session";
 
 function getSecret(): string {
-  const configuredSecret = process.env.VERIFAI_SESSION_SECRET;
-  const s = configuredSecret || (process.env.NODE_ENV !== "production"
-    ? "development-only-verifai-session-secret"
-    : "");
-  if (process.env.NODE_ENV === "production" && s.length < 32) {
-    throw new Error("VERIFAI_SESSION_SECRET must contain at least 32 characters in production.");
-  }
-  return s;
+  // Fallback secret for demo/local use — override with env var in real deployment
+  return process.env.VERIFAI_SESSION_SECRET || "verifai-demo-secret-key-sih2026-aicte-platform";
 }
 
 function sign(payload: string): string {

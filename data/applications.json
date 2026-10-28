@@ -1,0 +1,497 @@
+{
+  "institutions": [
+    {
+      "id": "inst-001",
+      "name": "Vidya Meridian Institute of Technology",
+      "type": "College",
+      "state": "Maharashtra"
+    },
+    {
+      "id": "inst-002",
+      "name": "Northstar School of Engineering",
+      "type": "College",
+      "state": "Tamil Nadu"
+    },
+    {
+      "id": "inst-003",
+      "name": "Aarohan State University",
+      "type": "University",
+      "state": "Karnataka"
+    },
+    {
+      "id": "inst-004",
+      "name": "Eastern Research Institute",
+      "type": "College",
+      "state": "West Bengal"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-super",
+      "name": "Asha Menon",
+      "email": "admin@aicte.demo",
+      "password": "Verifai@2026",
+      "role": "Super Admin"
+    },
+    {
+      "id": "usr-officer",
+      "name": "Kabir Rao",
+      "email": "officer@aicte.demo",
+      "password": "Verifai@2026",
+      "role": "AICTE Officer"
+    },
+    {
+      "id": "usr-inst-1",
+      "name": "Neha Kapoor",
+      "email": "institution@aicte.demo",
+      "password": "Verifai@2026",
+      "role": "Institution Admin",
+      "institutionId": "inst-001"
+    },
+    {
+      "id": "usr-inst-2",
+      "name": "Dev Narayan",
+      "email": "admin2@demo.institution",
+      "password": "Verifai@2026",
+      "role": "Institution Admin",
+      "institutionId": "inst-002"
+    },
+    {
+      "id": "usr-inst-3",
+      "name": "Maya Iyer",
+      "email": "admin3@demo.institution",
+      "password": "Verifai@2026",
+      "role": "Institution Admin",
+      "institutionId": "inst-003"
+    },
+    {
+      "id": "usr-inst-4",
+      "name": "Ishita Sen",
+      "email": "admin4@demo.institution",
+      "password": "Verifai@2026",
+      "role": "Institution Admin",
+      "institutionId": "inst-004"
+    },
+    {
+      "id": "usr-auditor",
+      "name": "Ravi Deshmukh",
+      "email": "auditor@aicte.demo",
+      "password": "Verifai@2026",
+      "role": "Auditor"
+    }
+  ],
+  "applications": [
+    {
+      "id": "APP-2026-001",
+      "name": "B.Tech Computer Science Extension",
+      "institutionId": "inst-001",
+      "institutionName": "Vidya Meridian Institute of Technology",
+      "programme": "B.Tech – Computer Science and Engineering",
+      "status": "Under Review",
+      "submittedAt": "2026-09-12T08:30:00.000Z",
+      "updatedAt": "2026-10-28T12:00:00.000Z",
+      "ownerId": "usr-inst-1",
+      "assignedAuditorId": "usr-auditor",
+      "documents": [
+        {
+          "id": "doc-app-2026-001",
+          "applicationId": "APP-2026-001",
+          "name": "AICTE approval letter",
+          "filename": "approval-letter-2026.pdf",
+          "type": "Approval Letter",
+          "status": "Verified",
+          "mimeType": "application/pdf",
+          "size": 482100,
+          "uploadedAt": "2026-09-12T08:30:00.000Z",
+          "uploadedBy": "usr-inst-1",
+          "extracted": {
+            "Institution": "Vidya Meridian Institute of Technology",
+            "Academic year": "2026–27",
+            "Programme": "B.Tech – Computer Science and Engineering"
+          },
+          "mock": true,
+          "mockExtraction": {
+            "mode": "mock",
+            "status": "Demo processing complete",
+            "label": "SYNTHETIC DEMO DATA — not for verification",
+            "institutionName": "Vidya Meridian Institute of Technology",
+            "documentType": "Approval Letter",
+            "confidence": 0.96
+          }
+        }
+      ],
+      "findings": [],
+      "compliance": [
+        {
+          "id": "comp-0-evidence",
+          "requirement": "Approval Letter evidence review",
+          "status": "Compliant",
+          "evidenceDocumentId": "doc-app-2026-001"
+        },
+        {
+          "id": "comp-0-declaration",
+          "requirement": "Institutional declarations complete",
+          "status": "Compliant"
+        }
+      ],
+      "observations": [],
+      "audit": [
+        {
+          "id": "audit-APP-2026-001-created",
+          "action": "status_changed",
+          "actorId": "usr-inst-1",
+          "details": "Synthetic application created with status Under Review.",
+          "createdAt": "2026-09-12T08:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "APP-2026-002",
+      "name": "AI and Data Science Programme Approval",
+      "institutionId": "inst-002",
+      "institutionName": "Northstar School of Engineering",
+      "programme": "B.Tech – Artificial Intelligence & Data Science",
+      "status": "Verification Pending",
+      "submittedAt": "2026-09-18T10:15:00.000Z",
+      "updatedAt": "2026-10-28T12:00:00.000Z",
+      "ownerId": "usr-inst-2",
+      "assignedAuditorId": "usr-auditor",
+      "documents": [
+        {
+          "id": "doc-app-2026-002",
+          "applicationId": "APP-2026-002",
+          "name": "Faculty roster and qualifications",
+          "filename": "faculty-roster-2026.pdf",
+          "type": "Faculty Roster",
+          "status": "Mismatch Detected",
+          "mimeType": "application/pdf",
+          "size": 731000,
+          "uploadedAt": "2026-09-18T10:15:00.000Z",
+          "uploadedBy": "usr-inst-2",
+          "extracted": {
+            "Institution": "Northstar Institute of Engineering",
+            "Academic year": "2026–27",
+            "Programme": "B.Tech – Artificial Intelligence & Data Science"
+          },
+          "mock": true,
+          "mockExtraction": {
+            "mode": "mock",
+            "status": "Demo processing complete",
+            "label": "SYNTHETIC DEMO DATA — not for verification",
+            "institutionName": "Northstar Institute of Engineering",
+            "documentType": "Faculty Roster",
+            "confidence": 0.72
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "find-app-2026-002",
+          "title": "Faculty count differs from application declaration",
+          "severity": "Medium",
+          "status": "Open",
+          "description": "Submitted roster lists 38 faculty; application declares 42.",
+          "createdAt": "2026-10-28T12:00:00.000Z",
+          "evidenceDocumentId": "doc-app-2026-002"
+        }
+      ],
+      "compliance": [
+        {
+          "id": "comp-1-evidence",
+          "requirement": "Faculty Roster evidence review",
+          "status": "Non-compliant",
+          "evidenceDocumentId": "doc-app-2026-002"
+        },
+        {
+          "id": "comp-1-declaration",
+          "requirement": "Institutional declarations complete",
+          "status": "Compliant"
+        }
+      ],
+      "observations": [],
+      "audit": [
+        {
+          "id": "audit-APP-2026-002-created",
+          "action": "status_changed",
+          "actorId": "usr-inst-2",
+          "details": "Synthetic application created with status Verification Pending.",
+          "createdAt": "2026-09-18T10:15:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "APP-2026-003",
+      "name": "New MBA Programme",
+      "institutionId": "inst-003",
+      "institutionName": "Aarohan State University",
+      "programme": "MBA – Innovation and Entrepreneurship",
+      "status": "Submitted",
+      "submittedAt": "2026-10-02T09:45:00.000Z",
+      "updatedAt": "2026-10-28T12:00:00.000Z",
+      "ownerId": "usr-inst-3",
+      "documents": [
+        {
+          "id": "doc-app-2026-003",
+          "applicationId": "APP-2026-003",
+          "name": "Infrastructure and facilities report",
+          "filename": "infrastructure-report-2026.pdf",
+          "type": "Infrastructure Report",
+          "status": "Verification Pending",
+          "mimeType": "application/pdf",
+          "size": 1050000,
+          "uploadedAt": "2026-10-02T09:45:00.000Z",
+          "uploadedBy": "usr-inst-3",
+          "extracted": {
+            "Institution": "Aarohan State University",
+            "Academic year": "2026–27",
+            "Programme": "MBA – Innovation and Entrepreneurship"
+          },
+          "mock": true,
+          "mockExtraction": {
+            "mode": "mock",
+            "status": "Demo processing complete",
+            "label": "SYNTHETIC DEMO DATA — not for verification",
+            "institutionName": "Aarohan State University",
+            "documentType": "Infrastructure Report",
+            "confidence": 0.72
+          }
+        }
+      ],
+      "findings": [],
+      "compliance": [
+        {
+          "id": "comp-2-evidence",
+          "requirement": "Infrastructure Report evidence review",
+          "status": "Not Assessed",
+          "evidenceDocumentId": "doc-app-2026-003"
+        },
+        {
+          "id": "comp-2-declaration",
+          "requirement": "Institutional declarations complete",
+          "status": "Not Assessed"
+        }
+      ],
+      "observations": [],
+      "audit": [
+        {
+          "id": "audit-APP-2026-003-created",
+          "action": "status_changed",
+          "actorId": "usr-inst-3",
+          "details": "Synthetic application created with status Submitted.",
+          "createdAt": "2026-10-02T09:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "APP-2026-004",
+      "name": "Mechanical Engineering Capacity Renewal",
+      "institutionId": "inst-004",
+      "institutionName": "Eastern Research Institute",
+      "programme": "B.Tech – Mechanical Engineering",
+      "status": "Observations Raised",
+      "submittedAt": "2026-08-21T11:00:00.000Z",
+      "updatedAt": "2026-10-28T12:00:00.000Z",
+      "ownerId": "usr-inst-4",
+      "assignedAuditorId": "usr-auditor",
+      "documents": [
+        {
+          "id": "doc-app-2026-004",
+          "applicationId": "APP-2026-004",
+          "name": "Laboratory equipment inventory",
+          "filename": "mechanical-lab-inventory-2026.pdf",
+          "type": "Equipment Inventory",
+          "status": "Manual Review Required",
+          "mimeType": "application/pdf",
+          "size": 918000,
+          "uploadedAt": "2026-08-21T11:00:00.000Z",
+          "uploadedBy": "usr-inst-4",
+          "extracted": {
+            "Institution": "Eastern Research Institute",
+            "Academic year": "2026–27",
+            "Programme": "B.Tech – Mechanical Engineering"
+          },
+          "mock": true,
+          "mockExtraction": {
+            "mode": "mock",
+            "status": "Demo processing complete",
+            "label": "SYNTHETIC DEMO DATA — not for verification",
+            "institutionName": "Eastern Research Institute",
+            "documentType": "Equipment Inventory",
+            "confidence": 0.72
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "find-app-2026-004",
+          "title": "Lab capacity evidence requires review",
+          "severity": "High",
+          "status": "Open",
+          "description": "Inventory details require manual confirmation by the assigned officer.",
+          "createdAt": "2026-10-28T12:00:00.000Z",
+          "evidenceDocumentId": "doc-app-2026-004"
+        }
+      ],
+      "compliance": [
+        {
+          "id": "comp-3-evidence",
+          "requirement": "Equipment Inventory evidence review",
+          "status": "Not Assessed",
+          "evidenceDocumentId": "doc-app-2026-004"
+        },
+        {
+          "id": "comp-3-declaration",
+          "requirement": "Institutional declarations complete",
+          "status": "Compliant"
+        }
+      ],
+      "observations": [],
+      "audit": [
+        {
+          "id": "audit-APP-2026-004-created",
+          "action": "status_changed",
+          "actorId": "usr-inst-4",
+          "details": "Synthetic application created with status Observations Raised.",
+          "createdAt": "2026-08-21T11:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "APP-2026-005",
+      "name": "Intake Expansion Review",
+      "institutionId": "inst-001",
+      "institutionName": "Vidya Meridian Institute of Technology",
+      "programme": "MCA – 120 additional seats",
+      "status": "Approved",
+      "submittedAt": "2026-06-14T07:20:00.000Z",
+      "updatedAt": "2026-10-28T12:00:00.000Z",
+      "ownerId": "usr-inst-1",
+      "assignedAuditorId": "usr-auditor",
+      "documents": [
+        {
+          "id": "doc-app-2026-005",
+          "applicationId": "APP-2026-005",
+          "name": "Fire safety certificate",
+          "filename": "fire-safety-certificate-2024.pdf",
+          "type": "Safety Certificate",
+          "status": "Expired",
+          "mimeType": "application/pdf",
+          "size": 343000,
+          "uploadedAt": "2026-06-14T07:20:00.000Z",
+          "uploadedBy": "usr-inst-1",
+          "extracted": {
+            "Institution": "Vidya Meridian Institute of Technology",
+            "Academic year": "2026–27",
+            "Programme": "MCA – 120 additional seats"
+          },
+          "mock": true,
+          "mockExtraction": {
+            "mode": "mock",
+            "status": "Demo processing complete",
+            "label": "SYNTHETIC DEMO DATA — not for verification",
+            "institutionName": "Vidya Meridian Institute of Technology",
+            "documentType": "Safety Certificate",
+            "confidence": 0.72
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "find-app-2026-005",
+          "title": "Fire safety certificate has expired",
+          "severity": "High",
+          "status": "Open",
+          "description": "Certificate validity ended on 31 March 2026.",
+          "createdAt": "2026-10-28T12:00:00.000Z",
+          "evidenceDocumentId": "doc-app-2026-005"
+        }
+      ],
+      "compliance": [
+        {
+          "id": "comp-4-evidence",
+          "requirement": "Safety Certificate evidence review",
+          "status": "Non-compliant",
+          "evidenceDocumentId": "doc-app-2026-005"
+        },
+        {
+          "id": "comp-4-declaration",
+          "requirement": "Institutional declarations complete",
+          "status": "Compliant"
+        }
+      ],
+      "observations": [],
+      "audit": [
+        {
+          "id": "audit-APP-2026-005-created",
+          "action": "status_changed",
+          "actorId": "usr-inst-1",
+          "details": "Synthetic application created with status Approved.",
+          "createdAt": "2026-06-14T07:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "APP-2026-006",
+      "name": "Applied Sciences Programme Revision",
+      "institutionId": "inst-002",
+      "institutionName": "Northstar School of Engineering",
+      "programme": "M.Sc – Applied Sciences",
+      "status": "Rejected",
+      "submittedAt": "2026-07-03T13:10:00.000Z",
+      "updatedAt": "2026-10-28T12:00:00.000Z",
+      "ownerId": "usr-inst-2",
+      "documents": [
+        {
+          "id": "doc-app-2026-006",
+          "applicationId": "APP-2026-006",
+          "name": "Institutional identity and accreditation",
+          "filename": "accreditation-certificate-2026.pdf",
+          "type": "Accreditation Certificate",
+          "status": "Verified",
+          "mimeType": "application/pdf",
+          "size": 625000,
+          "uploadedAt": "2026-07-03T13:10:00.000Z",
+          "uploadedBy": "usr-inst-2",
+          "extracted": {
+            "Institution": "Northstar School of Engineering",
+            "Academic year": "2026–27",
+            "Programme": "M.Sc – Applied Sciences"
+          },
+          "mock": true,
+          "mockExtraction": {
+            "mode": "mock",
+            "status": "Demo processing complete",
+            "label": "SYNTHETIC DEMO DATA — not for verification",
+            "institutionName": "Northstar School of Engineering",
+            "documentType": "Accreditation Certificate",
+            "confidence": 0.96
+          }
+        }
+      ],
+      "findings": [],
+      "compliance": [
+        {
+          "id": "comp-5-evidence",
+          "requirement": "Accreditation Certificate evidence review",
+          "status": "Compliant",
+          "evidenceDocumentId": "doc-app-2026-006"
+        },
+        {
+          "id": "comp-5-declaration",
+          "requirement": "Institutional declarations complete",
+          "status": "Compliant"
+        }
+      ],
+      "observations": [],
+      "audit": [
+        {
+          "id": "audit-APP-2026-006-created",
+          "action": "status_changed",
+          "actorId": "usr-inst-2",
+          "details": "Synthetic application created with status Rejected.",
+          "createdAt": "2026-07-03T13:10:00.000Z"
+        }
+      ]
+    }
+  ]
+}
