@@ -1,290 +1,153 @@
-<div align="center">
+# VERIFAI — AI-Powered Document Verification Platform
 
-<br/>
-
-```
-██╗   ██╗███████╗██████╗ ██╗███████╗ █████╗ ██╗
-██║   ██║██╔════╝██╔══██╗██║██╔════╝██╔══██╗██║
-██║   ██║█████╗  ██████╔╝██║█████╗  ███████║██║
-╚██╗ ██╔╝██╔══╝  ██╔══██╗██║██╔══╝  ██╔══██║██║
- ╚████╔╝ ███████╗██║  ██║██║██║     ██║  ██║██║
-  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝╚═╝
-```
-
-### AI-Powered Document Verification & Compliance Platform
-
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![SIH 2026](https://img.shields.io/badge/SIH_2026-SIH26261-FF6B35?style=for-the-badge)](https://sih.gov.in/)
-
-<br/>
-
-> **Built for Smart India Hackathon 2026**  
-> Ministry of Education · AICTE · Problem ID: SIH26261
-
-<br/>
-
-</div>
+**Smart India Hackathon 2026 · Problem ID: SIH26261**  
+Ministry of Education · AICTE · Institutional Compliance Intelligence
 
 ---
 
-## 🚀 What is VERIFAI?
+## Overview
 
-VERIFAI is an intelligent verification platform designed for **AICTE** and affiliated educational institutions. It combines AI-assisted OCR, fraud-risk scoring, and automated compliance monitoring to transform a slow, manual document review process into a fast, transparent, and evidence-backed workflow.
+VERIFAI is a full-stack web application that streamlines AICTE's application validation process using AI-assisted document verification, fraud-risk scoring, and automated compliance monitoring.
 
-```
-Institution submits docs  →  AI extracts & compares  →  Risk score generated
-         ↓                                                       ↓
-  Officer reviews findings  →  Approves / Rejects  →  Audit trail logged
-```
+**The problem:** AICTE receives thousands of institutional applications annually. Manual document review is slow, error-prone, and lacks traceability.
+
+**Our solution:** An intelligent platform where AI assists officers with document analysis, risk scoring, and compliance checks — while keeping final decisions in human hands.
 
 ---
 
-## ⚡ Quick Start
+## Getting Started
 
 ```bash
-# 1. Install dependencies
+# Install dependencies
 npm install
 
-# 2. Build for production
+# Development mode
+npm run dev
+
+# Production (faster — use for demos)
 npm run build
-
-# 3. Start the server
 npm start
-
-# Open → http://localhost:3000
 ```
 
-> **Dev mode** (with hot reload): `npm run dev`
+Open → **http://localhost:3000**
 
 ---
 
-## 🔑 Demo Accounts
+## Demo Accounts
 
-> All accounts → Password: **`Verifai@2026`**
+All accounts use password: `Verifai@2026`
 
-| Role | Email | What they can do |
-|------|-------|-----------------|
-| 🔍 **AICTE Officer** | `officer@aicte.demo` | Review apps, verify docs, approve/reject |
-| 🏛️ **Institution Admin** | `institution@aicte.demo` | Submit apps, upload docs, track status |
-| 📋 **Auditor** | `auditor@aicte.demo` | Read-only audit trail & reports |
-| ⚙️ **Super Admin** | `admin@aicte.demo` | Full platform access, user management |
-
----
-
-## ✨ Features
-
-<table>
-<tr>
-<td width="50%">
-
-### 🤖 AI Document Verification
-- Mock OCR field extraction
-- Field-by-field comparison
-- Mismatch & fraud detection
-- Confidence scoring per document
-
-</td>
-<td width="50%">
-
-### 🛡️ Fraud Risk Engine
-- Risk score 0–100
-- High / Medium / Low findings
-- Evidence-linked explanations
-- Explainable AI results
-
-</td>
-</tr>
-<tr>
-<td>
-
-### ✅ Compliance Monitoring
-- Automated AICTE requirement checks
-- Expired certificate detection
-- Missing document alerts
-- Institution-wise compliance score
-
-</td>
-<td>
-
-### 📊 Analytics Dashboard
-- Real-time stats from live data
-- Recharts: Pie, Bar, Area charts
-- Monthly verification trends
-- High-risk case prioritization
-
-</td>
-</tr>
-<tr>
-<td>
-
-### 🔄 Application Workflow
-- Multi-step submission form
-- Status: Draft → Approved/Rejected
-- Officer observations
-- Resubmission support
-
-</td>
-<td>
-
-### 🔒 Security & Audit
-- HMAC-SHA256 session cookies
-- Role-based access control
-- Immutable audit trail
-- Input & file validation
-
-</td>
-</tr>
-</table>
+| Role | Email |
+|------|-------|
+| AICTE Officer | `officer@aicte.demo` |
+| Institution Admin | `institution@aicte.demo` |
+| Auditor | `auditor@aicte.demo` |
+| Super Admin | `admin@aicte.demo` |
 
 ---
 
-## 🗺️ Screens
+## Features
 
-| # | Screen | Route | Roles |
-|---|--------|-------|-------|
-| 1 | Login | `/login` | All |
-| 2 | Dashboard | `/dashboard` | All |
-| 3 | Applications List | `/applications` | All |
-| 4 | Application Detail | `/applications/[id]` | All |
-| 5 | New Application | `/applications/new` | Institution Admin |
-| 6 | AI Verification Workspace | `/verification` | Officer, Admin |
-| 7 | Institutions Directory | `/institutions` | Officer, Admin |
-| 8 | Compliance Monitoring | `/compliance` | All |
-| 9 | Documents Browser | `/documents` | All |
-| 10 | Reports & Analytics | `/reports` | All |
-| 11 | Notifications | `/notifications` | All |
-| 12 | Audit Trail | `/audit` | All |
-| 13 | Administration | `/admin` | Super Admin |
+- **AI Document Verification** — OCR field extraction with mismatch detection
+- **Fraud Risk Scoring** — 0–100 risk score with evidence-backed findings
+- **Compliance Monitoring** — Automated checks against AICTE requirements
+- **Application Workflow** — Draft → Submitted → Review → Approved / Rejected
+- **Audit Trail** — Immutable log of every action and decision
+- **Role-Based Access Control** — 4 roles with distinct permissions
+- **Analytics Dashboard** — Real-time charts powered by Recharts
+- **Reports & CSV Export** — Filterable reports from live data
 
 ---
 
-## 🏗️ Tech Stack
+## Screens
+
+| Screen | Route |
+|--------|-------|
+| Login | `/login` |
+| Dashboard | `/dashboard` |
+| Applications List | `/applications` |
+| Application Detail | `/applications/[id]` |
+| New Application (5-step form) | `/applications/new` |
+| AI Verification Workspace | `/verification` |
+| Institutions Directory | `/institutions` |
+| Compliance Monitoring | `/compliance` |
+| Documents Browser | `/documents` |
+| Reports & Analytics | `/reports` |
+| Notifications | `/notifications` |
+| Audit Trail | `/audit` |
+| Administration | `/admin` |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | Next.js 15, React 19, TypeScript |
+| Backend | Next.js API Routes |
+| Database | JSON flat file (auto-seeded) |
+| Auth | HMAC-SHA256 signed session cookies |
+| Charts | Recharts |
+| Styling | Custom CSS — no Tailwind |
+
+---
+
+## Project Structure
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                      VERIFAI Stack                       │
-├─────────────────┬───────────────────┬───────────────────┤
-│    Frontend     │      Backend      │    Data / AI      │
-│                 │                   │                   │
-│  Next.js 15     │  Next.js API      │  JSON flat file   │
-│  React 19       │  Routes           │  (auto-seeded)    │
-│  TypeScript     │  HMAC-SHA256      │                   │
-│  Custom CSS     │  Auth cookies     │  Mock OCR         │
-│  Recharts       │  RBAC middleware  │  adapter          │
-│  Lucide Icons   │  Input validation │  Risk engine      │
-└─────────────────┴───────────────────┴───────────────────┘
-```
-
----
-
-## 📁 Project Structure
-
-```
-e:\sih 2026 2.0\
-│
 ├── app/
-│   ├── (app)/              ← All authenticated pages
-│   │   ├── layout.tsx      ← Shared Shell (sidebar stays stable)
-│   │   ├── dashboard/
-│   │   ├── applications/
-│   │   ├── verification/
-│   │   ├── compliance/
-│   │   ├── reports/
-│   │   ├── notifications/
-│   │   ├── audit/
-│   │   ├── institutions/
-│   │   ├── documents/
-│   │   └── admin/
-│   ├── (auth)/login/       ← Login page
-│   └── api/                ← All backend API routes
-│
-├── components/             ← 14 UI components
-│   ├── Shell.tsx           ← Sidebar + topbar layout
-│   ├── Dashboard.tsx       ← Recharts analytics
-│   ├── ApplicationDetail.tsx
-│   ├── VerificationWorkspace.tsx
-│   ├── ComplianceMonitor.tsx
-│   └── ...
-│
+│   ├── (app)/          ← Authenticated pages with shared sidebar layout
+│   ├── (auth)/login/   ← Login page
+│   └── api/            ← REST API routes
+├── components/         ← 14 UI components
 ├── lib/
-│   ├── auth.ts             ← Session cookie logic
-│   ├── rbac.ts             ← Role permissions
-│   ├── types.ts            ← TypeScript types
-│   └── data/
-│       ├── repository.ts   ← JSON read/write layer
-│       └── seed.ts         ← 6 demo apps, 4 institutions, 7 users
-│
+│   ├── auth.ts         ← Session logic
+│   ├── rbac.ts         ← Role permissions
+│   ├── types.ts        ← TypeScript types
+│   └── data/           ← Repository + seed data
 └── data/
-    └── applications.json   ← Live database (auto-created on first run)
+    └── applications.json  ← Live database (auto-created on first run)
 ```
 
 ---
 
-## 🔌 API Reference
+## API Routes
 
-| Method | Endpoint | Auth | Description |
-|--------|----------|------|-------------|
-| `POST` | `/api/auth/login` | ❌ | Sign in |
-| `POST` | `/api/auth/logout` | ❌ | Sign out |
-| `GET` | `/api/auth/session` | ✅ | Current user |
-| `GET` | `/api/applications` | ✅ | List applications |
-| `POST` | `/api/applications` | ✅ | Create application |
-| `GET` | `/api/applications/[id]` | ✅ | Application detail |
-| `PATCH` | `/api/applications/[id]/status` | ✅ | Update status |
-| `POST` | `/api/applications/[id]/observations` | ✅ | Add observation |
-| `POST` | `/api/applications/[id]/documents/upload` | ✅ | Upload document |
-| `GET` | `/api/institutions` | ✅ | List institutions |
-| `GET` | `/api/users` | ✅ Super Admin | List users |
+| Method | Route | Description |
+|--------|-------|-------------|
+| `POST` | `/api/auth/login` | Sign in |
+| `GET` | `/api/auth/session` | Current user |
+| `GET` | `/api/applications` | List applications |
+| `POST` | `/api/applications` | Create application |
+| `GET` | `/api/applications/[id]` | Application detail |
+| `PATCH` | `/api/applications/[id]/status` | Update status |
+| `POST` | `/api/applications/[id]/observations` | Add observation |
+| `POST` | `/api/applications/[id]/documents/upload` | Upload document |
+| `GET` | `/api/institutions` | List institutions |
+| `GET` | `/api/users` | List users (Super Admin only) |
 
 ---
 
-## 🌍 Environment Variables
+## Environment Variables
 
 Create `.env.local` (optional — demo works without it):
 
 ```env
-VERIFAI_SESSION_SECRET=your-super-secret-key-minimum-32-chars
+VERIFAI_SESSION_SECRET=your-secret-key-minimum-32-characters
 ```
 
 ---
 
-## ⚠️ Honest Limitations
+## Important Notes
 
-- 🔬 **OCR is mocked** — All extracted data is synthetic demo data, clearly labeled in UI
-- 🗄️ **JSON database** — Not suitable for production; replace with PostgreSQL/Supabase
-- 🔗 **No external APIs** — DigiLocker, MCA21, etc. not connected
-- 🤖 **No real ML model** — Risk scores are rule-based on finding severity
-
----
-
-## 🗺️ Production Roadmap
-
-```
-Demo (Now)          →    v1.0                →    v2.0
-──────────────           ──────────────           ──────────────
-Mock OCR                 PaddleOCR / Textract     ML Fraud Detection
-JSON flat file           Supabase PostgreSQL       Real-time collab
-Rule-based risk          DigiLocker API           Mobile app
-Static seed data         Live institution DB       LLM analysis
-```
+- All OCR/AI results are **mock demo data**, clearly labeled in the UI
+- Data is stored in a local JSON file — not suitable for production
+- No external APIs (DigiLocker, MCA21) are connected in demo mode
+- For production: replace JSON store with PostgreSQL/Supabase
 
 ---
 
-## 📜 License
+## License
 
 Built for **Smart India Hackathon 2026** · Problem ID **SIH26261**  
 AICTE · Ministry of Education · Government of India
-
----
-
-<div align="center">
-
-Made with ❤️ for SIH 2026
-
-**[Dashboard](http://localhost:3000/dashboard)** · **[Login](http://localhost:3000/login)** · **[API](http://localhost:3000/api/applications)**
-
-</div>
-#   v e r i f a i  
- 
