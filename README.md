@@ -1,5 +1,7 @@
 <div align="center">
 
+# VERIFAI
+
 <img src="https://img.shields.io/badge/VERIFAI-AI%20Verification%20Platform-0b1f3a?style=for-the-badge&labelColor=155eef" alt="VERIFAI" height="40"/>
 
 <br/><br/>
