@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="https://img.shields.io/badge/VERIFAI-AI%20Verification%20Platform-0b1f3a?style=for-the-badge&labelColor=155eef" alt="VERIFAI" height="40"/>
+
+<br/><br/>
+
 ```
 ██╗   ██╗███████╗██████╗ ██╗███████╗ █████╗ ██╗
 ██║   ██║██╔════╝██╔══██╗██║██╔════╝██╔══██╗██║
@@ -10,10 +14,6 @@
 ```
 
 <br/>
-
-<img src="https://img.shields.io/badge/VERIFAI-AI%20Verification%20Platform-0b1f3a?style=for-the-badge&labelColor=155eef" alt="VERIFAI" height="40"/>
-
-<br/><br/>
 
 ![Next.js](https://img.shields.io/badge/Next.js_15-black?style=flat-square&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
