@@ -4,17 +4,6 @@
 
 <br/><br/>
 
-```
-██╗   ██╗███████╗██████╗ ██╗███████╗ █████╗ ██╗
-██║   ██║██╔════╝██╔══██╗██║██╔════╝██╔══██╗██║
-██║   ██║█████╗  ██████╔╝██║█████╗  ███████║██║
-╚██╗ ██╔╝██╔══╝  ██╔══██╗██║██╔══╝  ██╔══██║██║
- ╚████╔╝ ███████╗██║  ██║██║██║     ██║  ██║██║
-  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝╚═╝
-```
-
-<br/>
-
 ![Next.js](https://img.shields.io/badge/Next.js_15-black?style=flat-square&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript_5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)
